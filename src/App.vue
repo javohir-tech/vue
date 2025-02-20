@@ -1,18 +1,18 @@
 <script>
-    export default{
+    export default {
         data(){
             return {
                 counter : 0
             }
         },
         methods:{
-            onIncrement(){
+            inCrements(){
                 this.counter += 1;
             },
-            onDecrement (){
-                if(this.counter > 0){
-                    this.counter -= 1;
-                }
+            inDecrement(){
+               if(this.counter >0){
+                this.counter -=1;
+               }
             }
         }
     }
@@ -20,9 +20,11 @@
 
 <template>
     <div>
-        <h1>Counter : {{ counter }}</h1>
-        <button @click="onIncrement">add</button>
-        <button @click="onDecrement">delete</button>
+         <h1>Counter : {{counter}} </h1>
+         <div>
+            <button @click="inCrements">add</button>
+            <button @click="inDecrement">delete</button>
+         </div>
     </div>
 </template>
 
