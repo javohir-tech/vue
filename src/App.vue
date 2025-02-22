@@ -3,7 +3,6 @@
     <div class="content">
       <AppInfo />
       <SearchPanel />
-      <AppFilter/>
       <MovieList />
       <MovieAddForm />
     </div>
@@ -18,7 +17,6 @@ import AppInfo from "./Components/AppInfo/AppInfo.vue";
 import MovieAddForm from "./Components/MovieAddForm/MovieAddForm.vue";
 import MovieList from "./Components/MovieList/MovieList.vue";
 import SearchPanel from "./Components/SearchPanel/SearchPanel.vue";
-import AppFilter from "./Components/AppFilter/AppFilter.vue";
 
 export default {
   components: {
@@ -26,7 +24,6 @@ export default {
     SearchPanel,
     MovieList,
     MovieAddForm,
-    AppFilter
   },
 };
 </script>
