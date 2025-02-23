@@ -1,6 +1,6 @@
 <template>
     <div class="shadow-lg mb-5">
-        <ul class="movie-list">
+        <ul class="movie-list list-group list-group-flush">
             <MovieListItem/>
             <MovieListItem/>
             <MovieListItem/>
@@ -17,6 +17,8 @@ export default {
     }
 }
 </script>
-<style>
-    
+<style >
+    .movie-list{
+        list-style: none;
+    }
 </style>
