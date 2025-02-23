@@ -4,7 +4,7 @@
       <AppInfo />
       <SearchPanel />
       <MovieList />
-      <MovieAddForm />
+      <!-- <MovieAddForm /> -->
     </div>
   </div>
 </template>
