@@ -3,8 +3,8 @@
     <div class="content">
       <AppInfo />
       <SearchPanel />
-      <MovieList />
-      <!-- <MovieAddForm /> -->
+      <MovieList :kinolar="kinolar"/>
+      <MovieAddForm />
     </div>
   </div>
 </template>
@@ -25,7 +25,30 @@ export default {
     MovieList,
     MovieAddForm,
   },
+  data() {
+    return {
+      kinolar: [
+        {
+          name: "Taxtlar o'yini",
+          viewers: 1021,
+          like: true,
+          favorite: false
+        },
+        {
+          name: "Titanlar Hujumi",
+          viewers: 121,
+          like: false,
+          favorite: true
+        },
+        {
+          name: "Interterstelar",
+          viewers: 21,
+          like: false,
+          favorite: true
+        },
+      ]
+    }
+  },
 };
 </script>
-<style>
-</style>
+<style></style>
